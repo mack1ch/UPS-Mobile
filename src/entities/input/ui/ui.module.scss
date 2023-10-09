@@ -49,6 +49,11 @@ $inputBorderFocusColor: #fea300;
         border: none;
 
         cursor: text;
+
+        @media screen and (max-width: 560px) {
+            border-radius: 20px;
+        }
+
         &:focus,
         &:active {
             outline: $inputBorderFocusColor solid 1px !important;

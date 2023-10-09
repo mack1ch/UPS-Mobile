@@ -1,14 +1,13 @@
 $buttonBgColor: #fea300;
-$buttonHeight: 48px;
+$buttonHeight: 60px;
 $buttonTextColor: #fff;
 
 .button {
-    border-radius: 15px;
+    border-radius: 0px 15px 15px 0px;
     background: $buttonBgColor;
 
     width: 100%;
     height: $buttonHeight;
-    padding: 15px 70px;
 
     max-width: 200px;
 
@@ -27,14 +26,6 @@ $buttonTextColor: #fff;
     text-align: center;
     transition: all 0.2s;
     position: relative;
-
-    @media screen and (max-width: 820px) {
-        padding: 15px 48px;
-    }
-
-    @media screen and (max-width: 750px) {
-        padding: 15px 32px;
-    }
 
     &:hover {
         filter: brightness(96%);
