@@ -6,7 +6,7 @@
 
 ## Демонстрация
 
--   [Сайт](https://ups-frontend-git-firstlevel-inverseteam.vercel.app/)
+-   [Сайт](В разработке)
 
 ## Технологии
 
