@@ -15,6 +15,9 @@ export default function Home() {
                 }}>
                 <Input leftIcon={Search} placeholder="Введите название секции или кружка" />
             </div>
+
+
+            
         </>
     );
 }
