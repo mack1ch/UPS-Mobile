@@ -35,7 +35,6 @@ $inputBorderFocusColor: #fea300;
         height: $inputHeight;
         width: 100%;
         padding: 18px 20px;
-        padding-left: 54px;
 
         min-width: 340px;
         max-width: 860px;
@@ -49,6 +48,7 @@ $inputBorderFocusColor: #fea300;
         outline: 0;
         border: none;
 
+        cursor: text;
         &:focus,
         &:active {
             outline: $inputBorderFocusColor solid 1px !important;
@@ -58,6 +58,7 @@ $inputBorderFocusColor: #fea300;
 
         &::placeholder {
             color: #9f9f9f;
+            user-select: none;
         }
 
         &:-moz-placeholder {

@@ -5,7 +5,7 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 import styles from './ui.module.scss';
 
-interface InputComponentProps {
+export interface InputComponentProps {
     /**
      * 	Тип. Возможные значения: 'password' | 'text' | 'number' | 'tel' | 'search' | 'time' | 'date' | 'url' | 'email'
      */
@@ -51,6 +51,12 @@ export const Input: FC<InputComponentProps> = ({
     placeholder,
     onValueChange,
 }) => {
+    const InputStyles = {
+        paddingLeft: leftIcon ? '54px' : undefined,
+        borderRight: 'none',
+        ...style,
+    };
+
     return (
         <>
             <label className={styles.inputContainer}>
@@ -64,7 +70,7 @@ export const Input: FC<InputComponentProps> = ({
                     type={type}
                     placeholder={placeholder}
                     className={`${styles.input} ${className}`}
-                    style={style}
+                    style={InputStyles}
                     value={value}
                 />
             </label>
