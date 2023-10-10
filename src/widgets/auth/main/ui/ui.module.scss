@@ -1,0 +1,55 @@
+$white: #fff;
+$accentColor: #ffa011;
+$greyColor: #9c9c9c;
+
+.position {
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%),
+        url('../../../../../public/assets/authBg.png'), lightgray 20% / cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: flex-end;
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        .title {
+            color: $white;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            .keepfood {
+                color: $accentColor;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        .paragraph {
+            color: $greyColor;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+        }
+        .buttonForm {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+
+    .footer {
+        text-align: center;
+    }
+}

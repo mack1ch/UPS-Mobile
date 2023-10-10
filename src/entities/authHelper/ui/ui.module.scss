@@ -1,0 +1,17 @@
+$defaultTextColor: #9c9c9c;
+$accentTextColor: #ffa011;
+.textStyle {
+    color: $defaultTextColor;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    .accentText {
+        color: $accentTextColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+}
