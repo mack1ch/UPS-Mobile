@@ -3,6 +3,8 @@ $buttonHeight: 52px;
 $buttonTextColor: #fff;
 
 .button {
+    z-index: 5;
+
     border-radius: 16px;
     background: $buttonBgColor;
 

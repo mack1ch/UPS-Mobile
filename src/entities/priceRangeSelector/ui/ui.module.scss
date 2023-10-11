@@ -1,0 +1,42 @@
+$textColor: #272727;
+$accentColor: #ffa011;
+
+.layout {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 16px;
+        .title {
+            color: $textColor;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .price {
+            color: $accentColor;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: right;
+        }
+    }
+    .borderWrap {
+        margin-top: 4px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .border {
+            color: $textColor;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}

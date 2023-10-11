@@ -1,0 +1,18 @@
+$activeColor: #ffa011;
+$disabledColor: #f8f8f8;
+
+.active {
+    width: 100%;
+    height: 8px;
+
+    border-radius: 5px;
+    background-color: $activeColor;
+}
+
+.disabled {
+    width: 100%;
+    height: 8px;
+
+    border-radius: 5px;
+    background-color: $disabledColor;
+}

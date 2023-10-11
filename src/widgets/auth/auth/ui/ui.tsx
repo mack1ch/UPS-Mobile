@@ -3,7 +3,7 @@ import styles from './ui.module.scss';
 import { Button } from '@/entities/buttons/button';
 import { AuthHelper } from '@/entities/authHelper';
 import { PageLayout } from '@/shared/layouts/page';
-
+import Link from 'next/link';
 export const AuthWidget = () => {
     return (
         <>
@@ -14,7 +14,9 @@ export const AuthWidget = () => {
                         <form className={styles.form}>
                             <Input type="email" placeholder="Email" />
                             <Input placeholder="Пароль" type="password" />
-                            <Button>Войти</Button>
+                            <Link href="auth/finance">
+                                <Button>Войти</Button>
+                            </Link>
                         </form>
                         <AuthHelper />
                     </PageLayout>

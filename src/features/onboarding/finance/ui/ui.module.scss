@@ -1,0 +1,13 @@
+$titleColor: #272727;
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    .title {
+        color: $titleColor;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

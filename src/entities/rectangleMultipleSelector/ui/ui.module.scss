@@ -1,0 +1,31 @@
+$rectangleBg: #f8f8f8;
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    .rectangle {
+        display: flex;
+        width: 100%;
+        padding: 12px 26px;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 10px;
+
+        border-radius: 20px;
+        background: $rectangleBg;
+
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+
+        transition: all 0.2s;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

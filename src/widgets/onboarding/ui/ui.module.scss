@@ -1,0 +1,30 @@
+.layout {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 20px;
+    .header {
+        width: 100vw;
+        height: 8px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+
+        padding: 20px;
+    }
+    .scrollableMain {
+        width: 100vw;
+        height: calc(100% - 40px);
+        padding: 20px;
+        overflow-y: auto;
+    }
+}
