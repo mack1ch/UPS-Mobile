@@ -2,6 +2,7 @@ import { RectangleMultiplySelector, Rectangle } from '@/entities/rectangleMultip
 import styles from './ui.module.scss';
 import { useState } from 'react';
 import { RectangleData } from '../data';
+import { Title } from '@/entities/title';
 
 export const FoodChoice = () => {
     const [rectangles, setRectangles] = useState<Rectangle[]>(RectangleData);
@@ -20,7 +21,7 @@ export const FoodChoice = () => {
     };
     return (
         <>
-            <h1 className={styles.title}>Укажите ваши приёмы пищи</h1>
+            <Title>Укажите ваши приёмы пищи</Title>
             <RectangleMultiplySelector rectangles={rectangles} onSelect={handleSelect} />
         </>
     );

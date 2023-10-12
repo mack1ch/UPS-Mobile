@@ -10,6 +10,7 @@ import { Skills } from '@/features/onboarding/skills';
 import { FoodChoice } from '@/features/onboarding/foodChoice';
 import { Eating } from '@/features/onboarding/eating';
 import { ActiveMap } from '../data';
+import Link from 'next/link';
 
 export const ProgressBarComponent = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -73,9 +74,13 @@ export const ProgressBarComponent = () => {
                     ))}
                 </header>
                 <main className={styles.scrollableMain}>{info}</main>
-                <Button onClick={handleNextClick}>
-                    {activeIndex === 8 ? 'Завершить' : 'Далее'}
-                </Button>
+                {activeIndex === 8 ? (
+                    <Link style={{ width: '100%' }} href="/keepfood">
+                        <Button>Завершить</Button>
+                    </Link>
+                ) : (
+                    <Button onClick={handleNextClick}>Далее</Button>
+                )}
             </section>
         </>
     );

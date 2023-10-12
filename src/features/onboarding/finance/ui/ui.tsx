@@ -1,12 +1,11 @@
+import { Title } from '@/entities/title';
 import styles from './ui.module.scss';
 import { PriceRangeSelector } from '@/entities/priceRangeSelector';
 export const Finance = () => {
     return (
         <>
             <div className={styles.wrap}>
-                <h1 className={styles.title}>
-                    Укажите ваши финансовые возможности на приготовление одного блюда
-                </h1>
+                <Title> Укажите ваши финансовые возможности на приготовление одного блюда</Title>
                 <PriceRangeSelector />
             </div>
         </>

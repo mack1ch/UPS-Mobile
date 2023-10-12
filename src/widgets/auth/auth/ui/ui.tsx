@@ -14,7 +14,7 @@ export const AuthWidget = () => {
                         <form className={styles.form}>
                             <Input type="email" placeholder="Email" />
                             <Input placeholder="Пароль" type="password" />
-                            <Link href="auth/finance">
+                            <Link href="auth/onboard">
                                 <Button>Войти</Button>
                             </Link>
                         </form>

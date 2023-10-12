@@ -4,6 +4,7 @@ import { FoodCardData } from '../data';
 import { useState } from 'react';
 import { Input } from '@/entities/input';
 import { BigFoodCard } from '@/entities/bigFoodCard';
+import { Title } from '@/entities/title';
 export const Eating = ({
     title,
     isSearch = false,
@@ -29,7 +30,7 @@ export const Eating = ({
     };
     return (
         <>
-            <h1 className={styles.title}>{title}</h1>
+            <Title>{title}</Title>
             {isSearch && (
                 <div style={{ marginTop: '24px', marginBottom: '24px' }}>
                     <Input placeholder="Введите название продукта" />
