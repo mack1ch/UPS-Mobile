@@ -1,0 +1,25 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+
+    .item {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        .title {
+            color: #272727;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .info {
+            color: #272727;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
+}

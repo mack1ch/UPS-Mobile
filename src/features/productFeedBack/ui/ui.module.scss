@@ -1,0 +1,27 @@
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    .views {
+        color: #dbdbdb;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    .icon {
+        transition: all 0.2s;
+        &:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    }
+    .right {
+        display: flex;
+        gap: 18px;
+    }
+}

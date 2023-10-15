@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import { FC } from 'react';
 import styles from './ui.module.scss';
-import { Button } from '@/entities/buttons/button';
-import { StaticImageData, StaticImport } from 'next/dist/shared/lib/get-img-props';
+import { StaticImageData } from 'next/dist/shared/lib/get-img-props';
 import { SelectionCardData } from '../data';
 
 export interface SelectionCardProps {

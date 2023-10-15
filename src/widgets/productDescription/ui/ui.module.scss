@@ -1,0 +1,17 @@
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+    .description {
+        color: #272727;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+    }
+}
