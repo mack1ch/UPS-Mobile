@@ -1,0 +1,22 @@
+$buttonColor: #ff5a5a;
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .button {
+        color: $buttonColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        background-color: transparent;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -2,7 +2,7 @@ $inputBgColor: #f8f8f8;
 $inputHeight: 60px;
 $inputBorderFocusColor: #fea300;
 $inputPlaceholderColor: #9c9c9c;
-
+$selectTextColor: #272727;
 .inputContainer {
     position: relative;
     display: flex;
@@ -71,6 +71,122 @@ $inputPlaceholderColor: #9c9c9c;
         }
         &:-moz-placeholder {
             opacity: 1;
+        }
+    }
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+
+    .inputContainer {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        border: none;
+
+        min-width: 340px;
+        max-width: 100%;
+        width: 100%;
+
+        .inputContainer {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .input {
+            border-radius: 20px;
+            background: $inputBgColor;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+
+            text-overflow: clip;
+            white-space: nowrap;
+            text-align: left;
+
+            height: $inputHeight;
+            width: 100%;
+            padding: 18px 20px;
+
+            min-width: 340px;
+            max-width: 100%;
+
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            outline: 0;
+            border: none;
+
+            cursor: text;
+
+            @media screen and (max-width: 560px) {
+                border-radius: 20px;
+            }
+
+            &:focus,
+            &:active {
+                outline: $inputBorderFocusColor solid 1px !important;
+                border-color: $inputBorderFocusColor !important;
+                border: 1px solid $inputBorderFocusColor !important;
+            }
+
+            &::placeholder {
+                color: $inputPlaceholderColor;
+                user-select: none;
+            }
+
+            &:-moz-placeholder {
+                opacity: 1;
+            }
+            &:-moz-placeholder {
+                opacity: 1;
+            }
+        }
+    }
+    .dropdown {
+        width: 100%;
+        padding: 16px;
+
+        box-sizing: border-box;
+        appearance: none;
+        border: none;
+
+        color: $selectTextColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+
+        border-radius: 22px;
+        background: $inputBgColor;
+        .item {
+            color: $selectTextColor;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+
+            border-radius: 8px;
+            &:hover {
+                background: #fff;
+                cursor: pointer;
+            }
         }
     }
 }

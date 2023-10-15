@@ -1,3 +1,9 @@
-export default function Search() {
-    return <>Привет мир</>;
+import { Search } from '@/widgets/search';
+
+export default function SearchPage() {
+    return (
+        <>
+            <Search />
+        </>
+    );
 }

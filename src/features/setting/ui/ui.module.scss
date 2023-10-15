@@ -1,0 +1,44 @@
+$titleColor: #9c9c9c;
+$toggleTextColor: #272727;
+.layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .title {
+        color: $titleColor;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        text-transform: uppercase;
+    }
+    .toggleLayout {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .toggleInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: flex-start;
+
+            width: 226px;
+
+            .toggleText {
+                color: $toggleTextColor;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+            }
+            .toggleDescription {
+                color: $titleColor;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+            }
+        }
+    }
+}

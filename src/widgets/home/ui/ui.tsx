@@ -7,6 +7,7 @@ import { WordsData } from '../data';
 import { useState } from 'react';
 import { ButtonLove } from '@/entities/buttons/love';
 import { FoodCard } from '@/features/foodCard';
+import { SelectionCard } from '@/features/selectionCard';
 export const Home = () => {
     const [words, setWords] = useState<Word[]>(WordsData);
     const [swiped, setSwiped] = useState<number | null>(null);
@@ -48,22 +49,28 @@ export const Home = () => {
     return (
         <>
             <section className={styles.layout}>
-                <Title>Рецепт на ближайший приём пищи:</Title>
-                <WordSelector words={words} onSelect={handleSelect} />
-                <div
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                    onTouchEnd={handleTouchEnd}
-                    className={`${styles.foodCard} ${
-                        !swiped
-                            ? null
-                            : swiped > 50
-                            ? styles.swipeRight
-                            : swiped < 50
-                            ? styles.swipeLeft
-                            : null
-                    }`}>
-                    <FoodCard />
+                <div className={styles.bigCardLayout}>
+                    <Title>Рецепт на ближайший приём пищи:</Title>
+                    <WordSelector words={words} onSelect={handleSelect} />
+                    <div
+                        onTouchStart={handleTouchStart}
+                        onTouchMove={handleTouchMove}
+                        onTouchEnd={handleTouchEnd}
+                        className={`${styles.foodCard} ${
+                            !swiped
+                                ? null
+                                : swiped > 50
+                                ? styles.swipeRight
+                                : swiped < 50
+                                ? styles.swipeLeft
+                                : null
+                        }`}>
+                        <FoodCard />
+                    </div>
+                </div>
+                <div className={styles.selectionLayout}>
+                    <Title>Подборки</Title>
+                    <SelectionCard />
                 </div>
             </section>
         </>

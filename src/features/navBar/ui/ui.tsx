@@ -38,7 +38,7 @@ export const NavBar = () => {
         {
             id: 3,
             title: 'Холодильник',
-            link: '/keepfood/frizen',
+            link: '/keepfood/fridge',
             icon: activeElementId === 3 ? FrizenActive : Frizen,
             active: activeElementId === 3,
             onClick: handleElementClick,

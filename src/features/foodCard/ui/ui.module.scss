@@ -1,6 +1,9 @@
+$overlayBg: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+$textColor: #fff;
+
 .card {
-    width: 345px;
-    height: 407px;
+    width: 350px;
+    height: 400px;
 
     background-repeat: no-repeat;
     background-size: contain;
@@ -29,7 +32,7 @@
         gap: 15px;
         .title {
             text-align: center;
-            color: #fff;
+            color: $textColor;
             font-size: 24px;
             font-style: normal;
             font-weight: 700;
@@ -37,7 +40,7 @@
         }
         .text {
             text-align: center;
-            color: #fff;
+            color: $textColor;
             font-size: 12px;
             font-style: normal;
             font-weight: 500;
@@ -52,7 +55,7 @@
     top: 0;
     left: 0;
     background-size: contain;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: $overlayBg;
     border-radius: 16px;
     z-index: 1;
 }

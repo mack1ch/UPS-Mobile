@@ -1,0 +1,52 @@
+$textColor: #272727;
+.layout {
+    display: flex;
+    gap: 16px;
+
+    overflow-x: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    height: 100%;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+    .card {
+        width: 128px;
+        height: 128px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+        .cardImgContent {
+            position: relative;
+            display: inline-block;
+            transition: all 0.2s;
+
+            .img {
+                display: block;
+                margin: 0 auto;
+                width: 128px;
+                display: block;
+
+                border-radius: 16px;
+            }
+        }
+        .cardText {
+            color: $textColor;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+        }
+    }
+}

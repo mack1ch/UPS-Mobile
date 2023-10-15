@@ -43,7 +43,7 @@ h3,
     border: 0;
     box-sizing: border-box;
     font-weight: 400;
-    color: #222;
+    color: #272727;
     font-family: '__onest_9487aa', '__onest_Fallback_9487aa';
     -webkit-tap-highlight-color: transparent;
 }
@@ -113,4 +113,10 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     transition: background-color 5000s ease-in-out 0s;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }

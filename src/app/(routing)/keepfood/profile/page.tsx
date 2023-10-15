@@ -1,3 +1,8 @@
-export default function Profile() {
-    return <>Привет мир</>;
+import { Profile } from '@/widgets/profile';
+export default function ProfilePage() {
+    return (
+        <>
+            <Profile />
+        </>
+    );
 }

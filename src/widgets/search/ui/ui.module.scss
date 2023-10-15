@@ -1,0 +1,12 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+    .selectLayout {
+        display: flex;
+        flex-direction: column;
+
+        gap: 24px;
+    }
+}

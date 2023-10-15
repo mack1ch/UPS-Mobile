@@ -6,21 +6,31 @@
 
     padding-top: 24px;
 
-    gap: 16px;
-    .foodCard {
-        width: 100%;
-        height: 100%;
-
+    gap: 48px;
+    .bigCardLayout {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        .foodCard {
+            width: 100%;
+            height: 100%;
 
-        transition: transform 0.3s ease;
-    }
-    .swipeRight {
-        transform: translateX(100%);
-    }
+            display: flex;
+            justify-content: center;
 
-    .swipeLeft {
-        transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        .swipeRight {
+            transform: translateX(100%);
+        }
+
+        .swipeLeft {
+            transform: translateX(-100%);
+        }
+    }
+    .selectionLayout {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }

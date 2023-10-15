@@ -1,0 +1,70 @@
+$cardBg: linear-gradient(96deg, #ffa011 0%, #edbd75 100%);
+$textColor: #fff;
+$buttonTextColor: #ffa011;
+.card {
+    border-radius: 30px;
+    background: $cardBg;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-width: 335px;
+    width: 100%;
+
+    padding: 20px;
+    gap: 15px;
+    .titleLayout {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+
+        .title {
+            color: $textColor;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 8px;
+
+            border-radius: 10px;
+            background: #fff;
+
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            color: $buttonTextColor;
+        }
+    }
+    .description {
+        color: $textColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+
+        align-self: stretch;
+    }
+    .cost {
+        color: $textColor;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        .perDate {
+            color: $textColor;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+        }
+    }
+}

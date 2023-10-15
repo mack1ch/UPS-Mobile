@@ -1,0 +1,26 @@
+$textColor: #272727;
+
+.layout {
+    display: flex;
+    flex-direction: column;
+
+    .headerLayout {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .text {
+        color: $textColor;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+
+        margin-top: 220px;
+    }
+}

@@ -1,0 +1,51 @@
+$buttonBg: #f8f8f8;
+$textColor: #272727;
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 16px;
+    background: $buttonBg;
+
+    transition: all 0.2s;
+
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.buttonWithChildren {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background: transparent;
+    transition: all 0.2s;
+    gap: 16px;
+
+    &:hover {
+        cursor: pointer;
+    }
+    .img {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px;
+
+        border-radius: 16px;
+        background: $buttonBg;
+    }
+    .children {
+        color: $textColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
