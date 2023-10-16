@@ -6,7 +6,7 @@
 
 ## Демонстрация
 
--   [Сайт](В разработке)
+-   [Сайт](https://ups-frontend-4bcwulk1i-inverseteam.vercel.app/)
 
 ## Технологии
 
