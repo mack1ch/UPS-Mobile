@@ -75,7 +75,7 @@ export const ProgressBarComponent = () => {
                 </header>
                 <main className={styles.scrollableMain}>{info}</main>
                 {activeIndex === 8 ? (
-                    <Link style={{ width: '100%' }} href="/keepfood/home">
+                    <Link style={{ width: '100%' }} href="/keepfood/home/">
                         <Button>Завершить</Button>
                     </Link>
                 ) : (
