@@ -1,0 +1,23 @@
+{
+    "name": "UPS 2024",
+    "display_override": "standalone",
+    "orientation": "natural",
+    "short_name": "UPS",
+    "description": "Первое задание. Мобильное приложение",
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "theme_color": "#ffa011",
+    "display": "standalone",
+    "lang": "ru",
+    "dir": "ltr",
+    "categories": ["education"],
+    "scope": "/",
+    "icons": [
+        {
+            "src": "/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}
