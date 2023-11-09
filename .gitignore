@@ -29,7 +29,7 @@ yarn-error.log*
 .vercel
 
 #next
-.next.config.js
+next.config.js
 
 # typescript
 *.tsbuildinfo
