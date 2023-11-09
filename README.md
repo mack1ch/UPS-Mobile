@@ -4,10 +4,6 @@
 
 -   [Дмитрий Степанов](https://t.me/mack1ch). Junior frontend developer
 
-## Демонстрация
-
--   [Сайт](https://ups-frontend-4bcwulk1i-inverseteam.vercel.app/)
-
 ## Технологии
 
 | Имя                     | Почему используем                                                                                                                    | Описание             | Документация                                                         |
